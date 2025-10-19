@@ -1,4 +1,3 @@
-```markdown
 # AutoGen Multi-Agent Group Chat
 
 A Streamlit web application that enables dynamic multi-agent conversations using AutoGen and OpenRouter API. Create custom AI agents with different personalities and system prompts, then watch them collaborate in real-time group discussions.
@@ -27,42 +26,7 @@ A Streamlit web application that enables dynamic multi-agent conversations using
   - Easy API key management
   - Model flexibility
 
-## Installation
 
-### Prerequisites
-- Python 3.8+
-- pip
-
-### Setup
-
-1. **Clone the repository**:
-```bash
-git clone https://github.com/YOUR_USERNAME/Multi_Agent_App.git
-cd Multi_Agent_App
-```
-
-2. **Create virtual environment**:
-```bash
-python3 -m venv .venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-```
-
-3. **Install dependencies**:
-```bash
-python3 -m pip install -r requirements.txt
-```
-
-## Usage
-
-1. **Run the app**:
-```bash
-streamlit run app.py
-```
-
-2. **Access in browser**:
-```
-http://localhost:8501
-```
 
 ### Workflow
 
@@ -87,13 +51,6 @@ http://localhost:8501
 - View conversation in real-time
 - Download transcript as CSV
 
-## Configuration
-
-### Environment Setup
-Create a `.env` file (optional):
-```
-OPENROUTER_API_KEY=your_api_key_here
-```
 
 ### Recommended Models (OpenRouter)
 
@@ -106,15 +63,6 @@ OPENROUTER_API_KEY=your_api_key_here
 **Avoid:**
 - Models without system message support (e.g., `gemma-3n-e2b-it`)
 
-## Project Structure
-
-```
-Multi_Agent_App/
-├── app.py                 # Main Streamlit application
-├── requirements.txt       # Python dependencies
-├── README.md             # This file
-└── .venv/                # Virtual environment
-```
 
 ## Dependencies
 
@@ -126,46 +74,12 @@ Multi_Agent_App/
 
 See `requirements.txt` for specific versions.
 
-## Troubleshooting
-
-### Error: `ModuleNotFoundError: No module named 'autogen'`
-```bash
-python3 -m pip install pyautogen
-```
-
-### Error: `API Error 400 - Developer instruction not enabled`
-Use a different model that supports system messages. Avoid provider-specific models that don't support system prompts.
-
-### Error: `command not found: streamlit`
-Use Python module execution:
-```bash
-python3 -m streamlit run app.py
-```
 
 ### Slow responses
 - Reduce `Max Rounds` value
 - Use faster models
 - Check OpenRouter API rate limits
 
-## Deployment
-
-### Deploy to Streamlit Cloud
-
-1. Push code to GitHub
-2. Go to [share.streamlit.io](https://share.streamlit.io)
-3. Sign in with GitHub
-4. Click "New app"
-5. Select your repository and `app.py`
-6. Add secrets in Streamlit settings:
-   - Name: `API_KEY`
-   - Value: Your OpenRouter API key
-7. Deploy!
-
-### Deploy to other platforms
-
-- **Heroku**: Use `Procfile` with `streamlit run app.py`
-- **Docker**: Create Dockerfile with dependencies
-- **AWS**: Use EC2 or ECS with Streamlit
 
 ## Example Use Cases
 
@@ -181,38 +95,9 @@ OpenRouter has rate limits. For production use:
 - Implement request throttling
 - Consider subscription tier upgrades
 
-## Future Enhancements
-
-- [ ] Code execution support
-- [ ] Web search integration
-- [ ] Conversation history persistence
-- [ ] Advanced agent personality templates
-- [ ] Real-time visualization
-- [ ] Multi-language support
-
-## Contributing
-
-Contributions welcome! Please:
-1. Fork the repository
-2. Create a feature branch
-3. Commit changes
-4. Push to branch
-5. Create Pull Request
-
-## License
-
-MIT License - see LICENSE file for details
-
-## Support
-
-For issues or questions:
-- Open a GitHub issue
-- Check existing documentation
-- Review troubleshooting section
-
 ## Author
 
-Created with ❤️ for AI enthusiasts
+Created with ❤️ for AI enthusiasts, Ask me any question via LinkedIn. https://www.linkedin.com/in/alihamzeh/
 
 ## Acknowledgments
 
